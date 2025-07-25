@@ -296,4 +296,182 @@
   .trusted-description li {
     margin-bottom: 0.75rem;
   }
+  .latest-deal {
+    padding: 4rem 2rem;
+    background-color: #fff7f0;
+    text-align: center;
+  }
+  
+  .deal-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #e44d26; /* highlight Latest */
+  }
+  
+  .deal-description {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .deal-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .deal-left,
+  .deal-right {
+    
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .deal-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .deal-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .deal-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+  }
+  
+  .deal-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .deal-overlay h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .shop-now {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ffd700;
+  }
+  
+  /* Optional custom sizing */
+  .deal-60 img,
+  .deal-30 img,
+  .deal-25 img {
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .deal-grid {
+      flex-direction: column;
+    }
+  
+    .deal-left,
+    .deal-right {
+      width: 100%;
+    }
+  }
+  .join-bunch {
+    background: url('../assets/news-letter-bg.png') no-repeat center center / cover;
+    width: 100%;
+    
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #fff;
+    max-width: 1400px;
+    margin: 4rem auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-overlay {
+    background: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 600px;
+    z-index: 1;
+  }
+  
+  .join-overlay h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .subscribe-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
+    outline: none;
+    flex: 1 1 250px;
+    min-width: 200px;
+  }
+  
+  .subscribe-form button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
+    background-color: #e44d26;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #c93f1c;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .subscribe-form {
+      flex-direction: column;
+    }
+  
+    .subscribe-form input,
+    .subscribe-form button {
+      width: 100%;
+    }
+  }
   
