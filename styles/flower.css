@@ -1,0 +1,94 @@
+/* Shared styles */
+.display-flex {
+    display: flex;
+}
+
+/* Colors */
+.text-primary {
+    color: #000000;
+}
+
+.text-gray {
+    color: #8987A1;
+}
+
+/* Header & Navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+/* Cart icon and label */
+.cart-icon {
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.cart-name {
+    font-weight: 500;
+}
+
+/* Container constraints */
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Banner related styles */
+.banner {
+
+    justify-content: space-around;
+    width: 1140px;
+    height: 441;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px; 
+}
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-description {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+.image{
+    justify-content: space-around;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px; 
+}
